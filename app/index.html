@@ -6,8 +6,12 @@
 	<title>Дамашее задание</title>
 	
 	<link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.carousel.min.css">
+	<link rel="stylesheet" href="libs/owl.carousel/dist/assets/owl.theme.default.css" />
 	
-
+	<link rel="stylesheet" type="text/css" href="css/main.css" media="only screen and (max-width:480px)">
+ 	<link rel="stylesheet" type="text/css" href="css/main.css" media="only screen and (max-width:602px)">
+ 	<link rel="stylesheet" type="text/css" href="css/main.css" media="only screen and (max-width:768px)">
+ 	<link rel="stylesheet" type="text/css" href="css/main.css" media="only screen and (max-width:1150)">
 	
 	<link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:400,600" rel="stylesheet">
 	<link rel="stylesheet" href="css/libs.min.css">
@@ -16,16 +20,21 @@
 </head>
 <body>
 	<header>
-		<div class="header-wrap">
+		<div class="header-wrap" >
 		<div class="header-wrap-logo">Author</div>
-			<div class="header-wrap-menu">Home</div>
-			<div class="header-wrap-menu">Service</div>
-			<div class="header-wrap-menu">Portfolio</div>
-			<div class="header-wrap-menu">Team</div>
-			<div class="header-wrap-menu">Blog</div>
-			<div class="header-wrap-menu">Contact</div>
+		<a href="#top-nav" class="toggle-menu"><span></span></a>
+			<nav id="top-nav" class="top-nav">
+				<ul>
+					<a href="#home"><li>Home</li></a>
+					<a href="#service"><li>Service</li></a>
+					<a href="#portfolio"><li>Portfolio</li></a>
+					<a href="#team"><li>Team</li></a>
+					<a href="#services"><li>Blog</li></a>
+					<a href="#contact"><li>Contact</li></a>
+				</ul>
+			</nav>
 		</div>
-		<div class="owl-carousel owl-theme header-slaider">
+		<div class="owl-carousel header-slaider" id="home">
     		<div class="owl-carousel-item">
 				<h3 class="owl-carousel-item-tittle">This is a main heading</h3>
 				<p class="owl-carousel-item-text">Lorem Ipsum is simply dummy text<br>of the printing</p>
@@ -34,10 +43,11 @@
     		<div class="owl-carousel-item"> Контент </div>
     		<div class="owl-carousel-item"> Контент </div>
 		</div>
+		
 	</header>
 
 	<body>
-		<div class="body-team">
+		<div class="body-team" id="team">
 			<h3>The Team</h3>
 			<div class="body-team-wrap">
 			<div class="body-team-wrap-part">
@@ -61,10 +71,10 @@
 		</div>
 		</div>
 		
-		<div class="body-price">
+		<div class="body-price" id="service">
 			<div class="body-price-wrap">
 				<div class="body-price-wrap-section">
-					<h4>Basic</h4>
+					<h4 id="price_tittle1">Basic</h4>
 					<h5>$5.01/Month</h5>
 					<table>
 					  <tr>
@@ -86,10 +96,10 @@
 					   <td>Prnare nisi pretium.</td>
 					  </tr>
 					</table>
-					<div class="body-price-wrap-section-button"><input type="button" value="Buy now"></div>
+					<div class="body-price-wrap-section-button"><input type="button" value="Buy now" id="price1"></div>
 				</div>
 				<div class="body-price-wrap-section">
-					<h4>Pro</h4>
+					<h4 id="price_tittle2">Pro</h4>
 					<h5>$10.01/Month</h5>
 					<table>
 					  <tr>
@@ -111,10 +121,10 @@
 					   <td>Prnare nisi pretium.</td>
 					  </tr>
 					</table>
-					<div class="body-price-wrap-section-button"><input type="button" value="Buy now"></div>
+					<div class="body-price-wrap-section-button"><input type="button" value="Buy now" id="price2"></div>
 				</div>
 				<div class="body-price-wrap-section">
-					<h4>Premium</h4>
+					<h4 id="price_tittle3">Premium</h4>
 					<h5>$20.01/Month</h5>
 					<table>
 					  <tr>
@@ -136,25 +146,38 @@
 					   <td>Prnare nisi pretium.</td>
 					  </tr>
 					</table>
-					<div class="body-price-wrap-section-button"><input type="button" value="Buy now"></div>
+					<div class="body-price-wrap-section-button"><input type="button" value="Buy now" id="price3"></div>
 				</div>
 			</div>
 		</div>
 	</body>
 
 	<footer>
-		<div class="footer-wrap"></div>
+		<div class="footer-conteiner" id="contact">
 		<h3>Contact Us</h3>
+		<div class="footer-wrap">
 		<div class="footer-wrap-contact">
-			<h5></h5>
-			<p></p>
+			<h5>Get in touch with us</h5>
+			<p>Lorem Ipsum is simply dummy text of the printing and typesetting<br>industry. Lorem Ipsum has been the industry's</p>
 			<ul>
-				<li></li>
-				<li></li>
-				<li></li>
+				<a href="#"><li class="footer-wrap-contact-fb"></li></a>
+				<a href="#"><li class="footer-wrap-contact-tw"></li></a>
+				<a href="#"><li class="footer-wrap-contact-google"></li></a>
 			</ul>
+			<p>Posted by Dospel &amp GanjaParker<br>
+				+XX-XXXX - XXXX - XX<br>
+				info@mail.com</p>
 		</div>
-		<div class="footer-wrap-form"></div>
+		<div class="footer-wrap-form">
+			<form>
+				<input type="text" class="footer-wrap-form-name" placeholder="Name" id="user_name" required>
+				<input type="email" class="footer-wrap-form-mail" placeholder="Email" id="user_email" required>
+				<textarea class="footer-wrap-form-message" placeholder="Message" id="text_comment"></textarea>
+				<input type="submit" class="footer-wrap-form-btn" value="Send" id="btn_submit"/>
+			</form>
+		</div>
+		</div>
+		</div>
 	</footer>
 
 	<script src="libs/jquery/jquery-3.2.1.min.js"></script>
