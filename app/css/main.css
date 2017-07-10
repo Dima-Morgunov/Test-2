@@ -103,6 +103,10 @@ body {
           border-radius: 2px; }
 
 /* on activation */
+.toggle-menu.on {
+  position: absolute;
+  right: 0; }
+
 .toggle-menu.on span {
   background-color: transparent; }
 
@@ -163,13 +167,12 @@ body {
   background: #eee;
   text-align: center;
   font-size: 30px;
-  top: -webkit-calc(50% - 20.5px);
-  top: calc(50% - 20.5px);
+  top: 50%;
+  margin-bottom: -20.5px;
   left: 0;
   margin: 0 0 0 29px; }
   .owl-prev img {
-    margin: -webkit-calc((51px - 26px) /2);
-    margin: calc((51px - 26px) /2); }
+    margin: 12.5px; }
 
 .owl-next {
   position: absolute;
@@ -182,13 +185,12 @@ body {
   background: #eee;
   text-align: center;
   font-size: 30px;
-  top: -webkit-calc(50% - 20.5px);
-  top: calc(50% - 20.5px);
+  top: 50%;
+  margin-bottom: -20.5px;
   right: 0;
   margin: 0 29px 0 0; }
   .owl-next img {
-    margin: -webkit-calc((51px - 26px) /2);
-    margin: calc((51px - 26px) /2); }
+    margin: 12.5px; }
 
 .body-team {
   height: 800px;
@@ -291,8 +293,7 @@ body {
 
 .body-price-wrap-section-button {
   background: #f8f9fb;
-  height: -webkit-calc(515px + 2px - (75px + 75px + 271px));
-  height: calc(515px + 2px - (75px + 75px + 271px)); }
+  height: 96px; }
   .body-price-wrap-section-button input {
     margin: 29px 0 0 0;
     width: 170px;
@@ -383,13 +384,13 @@ body {
     font-size: 16px; }
 
 .footer-wrap-form-name {
-  width: 250px;
+  width: 245px;
   height: 43px;
   padding-left: 20px;
   color: #c1c1c1; }
 
 .footer-wrap-form-mail {
-  width: 250px;
+  width: 245px;
   height: 43px;
   margin: 0 0 0 29px;
   padding-left: 20px;
@@ -444,7 +445,7 @@ body {
   .top-nav {
     display: none;
     width: 150px;
-    margin: 10px 20px 0 0;
+    margin: 10px 75px 0 0;
     float: right; }
     .top-nav ul {
       margin: 0 0; }
@@ -472,7 +473,7 @@ body {
     height: auto;
     width: 300px; }
     .footer-wrap-form .footer-wrap-form-message {
-      width: 260px; }
+      width: 250px; }
     .footer-wrap-form .footer-wrap-form-mail {
       margin: 30px 0 0 0; }
     .footer-wrap-form .footer-wrap-form-btn {
